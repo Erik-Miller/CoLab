@@ -1,0 +1,61 @@
+//
+//  AuthLandingView.swift
+//  CoLab
+//
+//  Created by Erik Miller on 1/6/20.
+//  Copyright © 2020 Erik Miller. All rights reserved.
+//
+
+import SwiftUI
+
+struct AuthLandingView: View {
+    
+    @State var showingSignIn = false
+    @State var showingSignUp = false
+    @State private var email: String = "E"
+    @State private var password: String = "E"
+    
+    var body: some View {
+        VStack(alignment: .center, spacing: 10){
+            Text("Welcome")
+            
+            
+            Button(action: {
+                self.showingSignIn.toggle()
+            }) {
+                Text("Sign in")
+            }.sheet(isPresented: $showingSignIn) {
+            SignInView()
+            }
+            
+            
+            Button(action: {
+                // your action here
+            }) {
+                Text("Sign Up")
+            }
+            
+            
+            
+        }
+    }
+}
+
+struct SignUpView: View {
+    var body: some View {
+        Text("Sign Up")
+    }
+}
+
+struct SignInView: View {
+    var body: some View {
+        Text("Sign In")
+    }
+}
+
+
+struct AuthLandingView_Previews: PreviewProvider {
+    static var previews: some View {
+        AuthLandingView()
+    }
+}
