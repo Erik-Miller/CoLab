@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC36DB02241F47CB00A48FE9 /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36DB01241F47CB00A48FE9 /* NavigationStack.swift */; };
+		DC36DB04241F4B2B00A48FE9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36DB03241F4B2B00A48FE9 /* HomeView.swift */; };
 		DC5D777823C40C3400C767B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D777723C40C3400C767B7 /* AppDelegate.swift */; };
 		DC5D777A23C40C3400C767B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D777923C40C3400C767B7 /* SceneDelegate.swift */; };
 		DC5D777E23C40C3800C767B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5D777D23C40C3800C767B7 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC36DB01241F47CB00A48FE9 /* NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
+		DC36DB03241F4B2B00A48FE9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../Main/HomeView.swift; sourceTree = "<group>"; };
 		DC5D777423C40C3400C767B7 /* CoLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5D777723C40C3400C767B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC5D777923C40C3400C767B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC36DAFC241F45EB00A48FE9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DC36DB03241F4B2B00A48FE9 /* HomeView.swift */,
+				DC36DB01241F47CB00A48FE9 /* NavigationStack.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		DC5D776B23C40C3400C767B7 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +180,7 @@
 		DCEFE6E023C7AF9E00D6D2CA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DC36DAFC241F45EB00A48FE9 /* Navigation */,
 				DCEFE6DF23C7AF5E00D6D2CA /* Launch */,
 				DCEFE6DE23C7AF4600D6D2CA /* Entry */,
 				DC5D778C23C40CD400C767B7 /* Authentication */,
@@ -291,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCF89AA323DE59650028A72F /* Models.swift in Sources */,
+				DC36DB04241F4B2B00A48FE9 /* HomeView.swift in Sources */,
 				DCBF1BDC23CA83FC00E522C8 /* SignInView.swift in Sources */,
 				DCBF1BD423CA802400E522C8 /* OldSignInView.swift in Sources */,
 				DCBF1BDF23CE304500E522C8 /* Coordinator.swift in Sources */,
@@ -301,6 +316,7 @@
 				DC5D777A23C40C3400C767B7 /* SceneDelegate.swift in Sources */,
 				DCEFE6DB23C66A8800D6D2CA /* Colors++.swift in Sources */,
 				DC5D779523C40D6300C767B7 /* MainView.swift in Sources */,
+				DC36DB02241F47CB00A48FE9 /* NavigationStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

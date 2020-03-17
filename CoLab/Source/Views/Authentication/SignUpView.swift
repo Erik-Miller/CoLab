@@ -25,7 +25,7 @@ struct SignUpView: View {
                             
                         }.padding()
                         Section{
-                            NavigationLink(destination: MainView()) {
+                            NavigationLink(destination: HomeView()) {
                                 Text("Show Detail View")
                             }
                         }
